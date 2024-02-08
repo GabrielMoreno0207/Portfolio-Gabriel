@@ -1,0 +1,435 @@
+/* Estilo para o body */
+body {
+    background-color: #282a36;
+    color: #f8f8f2;
+    font-family: 'Fira Code', monospace;
+}
+a {
+    color: inherit; /* Define a cor do link como a mesma cor do texto pai */
+    text-decoration: none; /* Remove sublinhado do link */
+}
+
+#curriculo{
+    cursor: pointer;
+}
+
+/* Estilo para as abas */
+.tabs {
+    background-color: #21222c;
+    padding: 8px;
+    display: flex;
+}
+
+.tab {
+    background: #282a36;
+    padding: 8px 16px;
+    margin-right: 8px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tab:hover {
+    background: #3a3c4e;
+    color: white; /* Texto fica branco ao passar o mouse */
+}
+
+/* Ícones das abas */
+.iconhtml,
+.iconcss,
+.iconjs {
+    margin-right: 8px;
+}
+
+
+/* Estilo para a área de código */
+.code-container {
+    display: flex;
+}
+
+.line-numbers-wrapper {
+    color: #6272a4; /* cor de comentário do tema Drácula */
+    background-color: #21222c; /* cor de fundo do painel de linhas */
+    padding: 10px; /* Espaçamento interno */
+    text-align: right; /* Alinhar os números à direita */
+    user-select: none; /* Impede que os números sejam selecionados */
+}
+
+main {
+    flex-grow: 1;
+    background-color: #282a36; /* Cor de fundo do editor de código */
+    color: #f8f8f2; /* Cor do texto do editor de código */
+    /* Adicione margem ou preenchimento conforme necessário */
+}
+
+/* Ícones das abas ao passar o mouse */
+.tab:hover .iconhtml {
+    color: rgb(218, 75, 18); /* Ícone fica branco ao passar o mouse */
+}
+.tab:hover .iconcss {
+    color: rgb(30, 101, 235); /* Ícone fica branco ao passar o mouse */
+}
+.tab:hover .iconjs {
+    color: rgb(218, 181, 18); /* Ícone fica branco ao passar o mouse */
+}
+
+/* Estilo para a barra de linha */
+.line-number {
+    width: 30px; /* Largura da barra de linha */
+    background-color: #21222c; /* Cor de fundo da barra de linha */
+    text-align: center;
+    line-height: 1.5; /* Espaçamento entre as linhas */
+    color: #4a4a85; /* Cor do número da linha */
+    padding: 10px 0; /* Espaçamento interno da barra de linha */
+}
+
+/* Estilo para a área de código */
+.code {
+    flex: 1;
+    margin-left: 0.01px; /* Espaçamento entre a barra de linha e o conteúdo */
+}
+
+.ContainerSobreMim{
+    max-height: 300px;
+    display: flex;
+}
+.photo {
+    margin-left: auto; /* Move a foto para a direita */
+    margin-right: 20px; /* Adiciona um espaço entre a foto e o conteúdo ao seu redor */
+}
+
+.photo img {
+    width: 200px; /* Defina a largura desejada */
+    height: auto; /* Mantenha a proporção da imagem */
+    border-radius: 10px; /* Adiciona uma borda arredondada de 10px */
+    opacity: 0.8; /* Reduz a opacidade da imagem */
+    box-shadow:  0 4px 8px rgb(20, 220, 80);
+}
+
+
+
+.ContainerProjetos{
+    max-height: 550px;
+}
+.ContainerContato{
+    max-height: 550px;
+}
+
+#contact-form {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+label {
+    color: #ffffff;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #44475a;
+    background-color: #f8f8f2;
+    color: #44475a;
+    border-radius: 5px;
+}
+
+button.btn-contratar {
+    background-color: rgb(220, 20, 130);
+    color: #f8f8f2;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button.btn-contratar:hover {
+    background-color: #3a3c4e;
+}
+
+
+
+/* Estilo para os containers */
+.ContainerSobreMim, .ContainerProjetos, .ContainerContato {
+    background-color: #44475a;
+    padding: 16px;
+    border-radius: 6px;
+    margin: 0 0 16px 0;
+    min-height: auto; /* Ajusta a altura conforme o conteúdo */
+    overflow: hidden; /* Esconde o conteúdo que ultrapassa o contêiner */
+    word-wrap: break-word; /* Quebra as palavras longas para que elas não ultrapassem os limites do contêiner */
+}
+
+
+
+
+/* Estilo para o container de conteúdo */
+.content-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Ocupa todo o espaço disponível */
+    margin-left: 8px; /* Margem à esquerda para separar da barra de linha */
+}
+
+.card-container {
+    display: flex; /* Exibe os cards em linha */
+    flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha quando não houver espaço suficiente */
+    justify-content: space-around; /* Distribui os cards uniformemente ao longo do eixo principal */
+}
+
+
+/* Estilo para o texto dentro dos containers */
+.section {
+    color: #f8f8f2; /* Cor do texto */
+}
+
+/* Estilos para cores específicas */
+.rosa {
+    color: rgb(220, 20, 130);
+}
+.verde {
+    color: rgb(20, 220, 80);
+}
+.amarelo {
+    color: rgb(228, 207, 18);
+}
+
+/*CARDS*/
+
+.card {
+    width: 18rem;
+    background-color: #44475a; /* Cor de fundo do card */
+    color: #282a36; /* Cor do texto */
+    border-radius: 10px; /* Borda arredondada */
+    box-shadow: 0 4px 8px rgb(220, 20, 130); /* Sombra */
+    transition: transform 0.3s ease-in-out; /* Transição suave */
+}
+
+.card:hover {
+    transform: scale(1.03); /* Aumenta ligeiramente o tamanho do card */
+}
+
+
+.card-body {
+    padding: 1.5rem; /* Espaçamento interno */
+}
+
+.card-img-top {
+    width: 100%; /* Garante que a imagem ocupe todo o espaço horizontalmente */
+    height: 200px; /* Define a altura da imagem */
+    object-fit: cover; /* Mantém a proporção e corta a imagem para preencher o espaço */
+    border-top-left-radius: 10px; /* Borda arredondada no canto superior esquerdo */
+    border-top-right-radius: 10px; /* Borda arredondada no canto superior direito */
+}
+
+.card-title {
+    color: #f8f8f2; /* Cor do título */
+}
+
+.card-text {
+    color: #f8f8f2; /* Cor do texto */
+}
+
+.btn-primary {
+    background-color: #6272a4; /* Cor de fundo do botão */
+    color: #f8f8f2; /* Cor do texto do botão */
+    border: none; /* Remove a borda */
+    border-radius: 5px; /* Borda arredondada */
+    padding: 0.5rem 1rem; /* Espaçamento interno */
+    cursor: pointer; /* Cursor ao passar sobre o botão */
+    transition: background-color 0.3s; /* Transição suave */
+}
+
+.btn-primary:hover {
+    background-color: #44475a;/* Cor da borda do botão ao passar o mouse */
+}
+
+footer {
+    background-color: #282a36; /* Cor de fundo do footer */
+    color: #f8f8f2; /* Cor do texto no footer */
+    padding: 20px 0; /* Espaçamento interno */
+}
+
+.containerFooter {
+    max-width: 1200px; /* Largura máxima do conteúdo do footer */
+    margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+    text-align: center; /* Alinha o texto ao centro */
+}
+
+.nome {
+    font-weight: bold; /* Deixa o nome em negrito */
+    color: rgb(20, 220, 80);; /* Cor específica para o nome */
+}
+
+/*Modal-------------------------------------*/
+
+.modal {
+    display: none; /* Oculta o modal por padrão */
+    position: fixed; /* Permite que o modal seja posicionado na tela */
+    z-index: 1; /* Garante que o modal esteja na frente de outros elementos */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7); /* Fundo escuro para destacar o modal */
+}
+
+.modal-content {
+    background-color: #2e344e; /* Cor de fundo do modal */
+    margin: 15% auto; /* Centraliza o modal verticalmente e o posiciona a 15% do topo */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 200px; /* Largura do modal */
+    text-align: center;
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content img {
+    width: 100%; /* Ajusta a largura da imagem para preencher o modal */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+.modal-content p {
+    font-size: 14px; /* Tamanho do texto */
+    color: #fff; /* Cor do texto */
+    margin-top: 10px; /* Espaçamento superior */
+}
+
+.zeuss img {
+    float: right;
+    width: 30px; /* Defina o tamanho desejado para a imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 15px;
+    cursor: pointer;
+}/* Para dispositivos com largura máxima de 1280px */
+@media screen and (max-width: 1280px) {
+    .content-container {
+        margin: 0 auto; /* Centraliza horizontalmente */
+    }
+
+    .ContainerSobreMim, .ContainerProjetos, .ContainerContato {
+        padding: 16px;
+        max-width: 90%; /* Limita a largura máxima */
+        margin: 0 auto; /* Centraliza horizontalmente */
+        text-align: center; /* Centraliza o conteúdo */
+        max-height: none;
+    }
+
+    #contact-form {
+        max-width: 400px; /* Defina a largura máxima desejada para o formulário */
+        margin: 0 auto; /* Centralize horizontalmente */
+    }
+}
+
+/* Para dispositivos com largura máxima de 768px (tablet) */
+@media screen and (max-width: 768px) {
+    .content-container {
+        margin: 0 auto; /* Centraliza horizontalmente */
+    }
+
+    #contact-form {
+        max-width: 90%; /* Defina a largura máxima desejada para o formulário */
+        margin: 0 auto; /* Centralize horizontalmente */
+    }
+
+    label {
+        font-size: 14px; /* Diminui o tamanho do rótulo */
+    }
+
+    .tabs {
+        flex-direction: column;
+    }
+    .tab {
+        margin-bottom: 8px;
+    }
+    .line-number {
+        display: none;
+    }
+    .code-container {
+        flex-direction: column;
+    }
+    .ContainerSobreMim, .ContainerProjetos, .ContainerContato {
+        display: grid;
+        padding: 16px;
+        max-width: 90%; /* Limita a largura máxima */
+        margin: 0 auto; /* Centraliza horizontalmente */
+        text-align: center; /* Centraliza o conteúdo */
+    }
+    .photo {
+        order: -1; /* Move a foto para cima */
+        margin: 0 auto; /* Centraliza horizontalmente */
+    }
+    .section {
+        order: 1; /* Move a seção abaixo da foto */
+    }
+    .card {
+        margin-bottom: 15px; /* Adiciona espaçamento entre os cards */
+        margin: 0 10px 20px;
+    }
+}
+
+/* Para dispositivos com largura máxima de 425px (iPhone) */
+@media screen and (max-width: 425px) {
+    .content-container {
+        margin: 0 auto; /* Centraliza horizontalmente */
+    }
+
+    .ContainerSobreMim, .ContainerProjetos, .ContainerContato {
+        padding: 8px; /* Reduz o preenchimento */
+        max-height: none;
+        margin: 0 auto; /* Centraliza horizontalmente */
+    }
+
+    #contact-form {
+        max-width: 80%; /* Limita a largura máxima do formulário */
+        margin: 0 auto; /* Centraliza horizontalmente */
+    }
+
+    label {
+        font-size: 14px; /* Diminui o tamanho do rótulo */
+    }
+}
+
+/* Para dispositivos com largura máxima de 375px (iPhone XS) */
+@media screen and (max-width: 375px) {
+    .content-container {
+        margin: 0 auto; /* Centraliza horizontalmente */
+    }
+
+    .ContainerSobreMim, .ContainerProjetos, .ContainerContato {
+        padding: 4px; /* Reduz ainda mais o preenchimento */
+        margin: 0 auto; /* Centraliza horizontalmente */
+    }
+
+    #contact-form {
+        max-width: 70%; /* Limita a largura máxima do formulário */
+        margin: 0 auto; /* Centraliza horizontalmente */
+    }
+
+    label {
+        font-size: 14px; /* Diminui o tamanho do rótulo */
+    }
+}

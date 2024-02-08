@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Moreno</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" href="codificacao.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+
+
+</head>
+<body>
+    <header>
+    <div class="tabs code">
+        <a href="#ContainerSobreMim" class="tab SobreMim">
+            <span class="iconhtml"><i class="fab fa-html5"></i></span><span>SobreMim.html</span>
+        </a>
+        <a href="#ContainerProjetos" class="tab Projetos">
+            <span class="iconcss"><i class="fab fa-css3"></i></span><span>Projetos.css</span>
+        </a>
+        <a href="#ContainerContato" class="tab Contato">
+            <span class="iconjs"><i class="fab fa-js"></i></span><span>Contato.js</span>
+        </a>
+        <div class="zeuss">
+            <img src="zeus.jpeg" alt="imgZ">
+        </div>
+    </div>
+</header>
+
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="zeus.jpeg" alt="ImgZ">
+            <p>Ajude a comprar a ração do Zeus, me contrate!</p>
+        </div>
+    </div>
+    <div class="code-container">
+        <!-- Barra de linha -->
+        <div class="line-number">
+            1<br>
+            2<br>
+            3<br>
+            4<br>
+            5<br>
+            6<br>
+            7<br>
+            8<br>
+            9<br>
+            10<br>
+            11<br>
+            12<br>
+            13<br>
+            14<br>
+            15<br>
+            16<br>
+            17<br>
+            18<br>
+            19<br>
+            20<br>
+            21<br>
+            22<br>
+            23<br>
+            24<br>
+            25<br>
+            26<br>
+            27<br>
+            28<br>
+            29<br>
+            30<br>
+            31<br>
+            32<br>
+            33<br>
+            34<br>
+            35<br>
+            36<br>
+            37<br>
+            38<br>
+            39<br>
+            40<br>
+            41<br>
+            42<br>
+            43<br>
+            44<br>
+            45<br>
+            46<br>
+            47<br>
+            48<br>
+            49<br>
+            50<br>
+            51<br>
+            52<br>
+            53<br>
+        </div>
+        <!-- Containers para "Sobre Mim", "Projetos" e "Contato" -->
+        <div class="content-container">
+            <div class="ContainerSobreMim" id="ContainerSobreMim">
+                <div class="section">
+                    
+                    
+                    <h1><code>&lt;<span class="rosa">h1</span>&gt;Gabriel Moreno  Dev Front-end & UX/UI&lt;/<span class="rosa">h1</span>&gt;</code></h1>
+                    <h3><code>&lt;<span class="rosa">h3</span>&gt;Sou um entusiasta da programação, apaixonado por transformar linhas de código em soluções criativas.<br>Além disso, sou um gamer dedicado, explorando mundos virtuais e me divertindo com desafios eletrônicos.<br>Minha afinidade com o design complementa minha abordagem para criar experiências únicas e envolventes.&lt;/<span class="rosa">h3</span>&gt;</code></h3>
+            
+                    <h1><code>&lt;<span class="verde">h1</span>&gt;Skills.&lt;/<span class="verde">h1</span>&gt;</code></h1>
+            
+                    <h1>
+                        <code>
+                            &lt;<span class="rosa">i</span> <span class="verde">class</span><span class="rosa"> =</span></span><span class="amarelo">"icons"</span></span>&gt;
+                            <i class="fab fa-html5"></i> <!-- Ícone HTML -->
+                            <i class="fab fa-css3"></i> <!-- Ícone CSS -->
+                            <i class="fab fa-js"></i> <!-- Ícone JavaScript -->
+                            <i class="fab fa-react"></i> <!-- Ícone React -->
+                            <i class="fas fa-database"></i> <!-- Ícone SQL Server -->
+                            <i class="fab fa-figma"></i> <!-- Ícone Figma -->
+                            <i class="fab fa-sass"></i> <!-- Ícone Sass -->
+                        &lt;/<span class="rosa">i</span>&gt;
+                        </code>
+                    </h1>
+                    <span onclick="baixarCurriculo()" id="curriculo"> &lt;<span class="rosa">embed</span> <span class="verde">src </span><span class="rosa">= </span><span class="amarelo">"meu_curriculo.pdf"</span><span>&gt;</span> </span>
+                   
+                    
+                    
+
+
+                </div>
+                <div class="photo">
+                    <img src="gm.webp" alt="Minha Foto">
+                </div>
+            </div>
+            <br>
+            <div class="ContainerProjetos" id="ContainerProjetos">
+                <div class="section">
+                    <h1><code>&lt;<span class="rosa">h1</span>&gt;Projetos&lt;/<span class="rosa">h1</span>&gt;</code></h1>
+                   <div class="card-container">
+                    <div class="card" style="width: 18rem;">
+                        <img src="barber.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Projeto IBarber [Figma]</h5>
+                          <p class="card-text">É a criação de um prototipo de design para um app voltado a berbeiros.</p>
+                          <a href="https://www.figma.com/proto/BYwxIl7v1PsoIlK5fnJSiT/Barber-App?type=design&node-id=41-202&t=Rtctxo9lYc8701bX-1&scaling=scale-down&page-id=0%3A1&mode=design" class="btn btn-primary">Da uma olhadinha!</a>
+                        </div>
+                      </div>
+                      <div class="card" style="width: 18rem;">
+                        <img src="financa.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Projeto Finanças [Figma]</h5>
+                          <p class="card-text">É a criação de um prototipo de design para um app familiar de controle de finanças.</p>
+                          <a href="https://www.figma.com/proto/a4NwdQFmvayPNTPK1s2apf/Finan%C3%A7as?type=design&node-id=43-2&t=KjDleBIwIAE6GQzM-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=43%3A2&mode=design" class="btn btn-primary">Da uma olhadinha!</a>
+                        </div>
+                      </div>
+                      <div class="card" style="width: 18rem;">
+                        <img src="tcc.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Projeto App NatureConnect [Flutter/Dart/SQLITE]</h5>
+                          <p class="card-text">App desenvolvido para apresentação como TCC, voltado para consumo de APIs ambientais.</p>
+                          
+                          <a href="tcc.mp4" target="_blank" class="btn btn-primary">Da uma olhadinha!</a>
+
+
+                        </div>
+                      </div>
+                      <div class="card" style="width: 18rem;">
+                        <img src="p1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Sistema para Clínica Veterinaria [Flutter/Dart/Firebase]</h5>
+                          <p class="card-text">Sistema real para um clinica veterinaria, este projeto ainda esta em DESENVOLVIMENTO.</p>
+                          <a href="#" class="btn btn-primary">Da uma olhadinha!</a>
+                        </div>
+                      </div>
+                   </div>
+                </div>
+                
+            </div>
+            <br>
+            <div class="ContainerContato" id="ContainerContato">
+                <div class="section">
+                    <h1><code>&lt;<span class="rosa">h1</span>&gt;Contato&lt;/<span class="rosa">h1</span>&gt;</code></h1>
+                   
+        <form id="contact-form">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+            
+            <button type="submit" class="btn-contratar">Enviar mensagem</button>
+        </form>
+                   
+    
+                </div>
+        </div>
+                
+        </div>
+        
+    </div>  
+    <!-- Footer -->
+    <footer>
+        <div class="containerFooter">
+            <p>Desenvolvido por <span class="nome">Gabriel Moreno</span> &copy; 2024</p>
+            <div class="social-icons">
+                <a href="https://github.com/GabrielMoreno0207" target="_blank" class="icon-github"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/gabriel-morenodev/" target="_blank" class="icon-linkedin"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+    
+    
+    <script src="script.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+</body>
+</html>
